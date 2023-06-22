@@ -53,24 +53,7 @@ def comparar_textos(caminho_texto1, caminho_texto2):
             f.write('\nLinhas iguais nos dois textos:\n')
             for linha in igual_texto1_texto2:
                 f.write(f'{linha}\n')
-
-#def comparar_textos(caminho_texto1, caminho_texto2):
-    #texto1 = ler_texto_notepad(caminho_texto1)
-    #texto2 = ler_texto_notepad(caminho_texto2)
-
-    #if texto1 is not None and texto2 is not None:
-        #linhas_texto1 = texto1.split('\n')
-        #linhas_texto2 = texto2.split('\n')
-
-        #diferenca = difflib.ndiff(linhas_texto1, linhas_texto2)
-
-        #with open('diferenca.txt', 'w', encoding='utf-8') as f:
-            #for linha in diferenca:
-                #if linha.startswith('- '):
-                    #f.write(f'Linha exclusiva no texto 1: {linha[2:]}\n')
-                #elif linha.startswith('+ '):
-                    #f.write(f'Linha exclusiva no texto 2: {linha[2:]}\n')
-
+                
 # Caminhos dos arquivos de texto
 caminho_texto1 = r"C:\Users\Rose\Documents\listComp\Diretorio1"
 caminho_texto2 = r"C:\Users\Rose\Documents\listComp\Diretorio2"
